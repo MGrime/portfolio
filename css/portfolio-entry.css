@@ -1,0 +1,83 @@
+.portfolio-topbar {
+    width: 100%;
+    height: 70px;
+    background-color: var(--swatchDark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.portfolio-topbar p {
+    color: var(--swatchAccentLightAlt);
+    margin: 0px;
+    padding: 10px 0px 0px 10px;
+    font-size: 30px;
+    float: left;
+}
+
+.portfolio-topbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+    padding: 15px 15px 0px 0px;
+    float: right;
+    top: 0;
+    right: 0;
+    position: relative;
+}
+
+.portfolio-topbar a:hover {
+    color:var(--swatchAccentLightAlt);
+}
+
+.portfolio-text {
+    padding: 20px;
+    text-align: center;
+}
+.portfolio-text h3 {
+    padding-top: 50px;
+}
+.portfolio-text h4 {
+    line-height: 5px;
+    padding-bottom: 15px;
+}
+
+.portfolio-text a {
+    color: white;
+    font-size: 16px;
+}
+.portfolio-text p {
+    color: white;
+    font-size: 16px;
+}
+.portfolio-text b {
+    font-weight: 500;
+}
+.portfolio-text mark {
+    background-color: none;
+}
+.portfolio-text img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.auto-resizable-iframe {
+    max-width: 600px;
+    margin: 0px auto;
+}
+  
+.auto-resizable-iframe div {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0px;
+}
+  
+.auto-resizable-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}

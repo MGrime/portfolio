@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Michael Grime | Games & Software Programmer | Multi-Threaded Collision Simulator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-utilities@4.1.3/bootstrap-utilities.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/154378ee9f.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/portfolio-entry.css'>
+    <script src='scripts/main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="portfolio-topbar" class="portfolio-topbar d-none d-lg-block">
+        <p style="font-weight: 500;">Michael Grime</p>
+        <a href="/index.html#contact"class="nav-button-s1">Contact</a>
+        <a href="/index.html#personal-projects"class="nav-button-s2">Personal Projects</a>
+        <a href="/index.html#cv" class="nav-button-s3">Curriculum Vitae</a>
+        <a href="/index.html#portfolio" class="nav-button-s2">Portfolio</a>
+        <a href="/index.html" class="nav-button-s1">Home</a>
+    </div>
+    <div id="mobile-navbar" class="mobile-navbar d-lg-none">
+        <p style="font-weight: 500;">Michael Grime</p>
+        <div id="navbarLinks">
+            <a href="/index.html">Home</a>
+            <a href="/index.html#portfolio">Portfolio</a>
+            <a href="/index.html#cv">Curriculum Vitae</a>
+            <a href="/index.html#personal-projects">Personal Projects</a>
+            <a href="/index.html#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleHamburgerMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <div class="s1">
+        <div class="main-container portfolio-text">
+            <h3>Multi-Threaded Collision Simulator (C++)</h3>
+            <h4>Project Overview</h4>
+            <p><b>Source Code - </b><a href="https://github.com/MGrime/Multithreading-Visualiser">MGrime/Multithreading-Visualiser: Simulates collisions between millions of circles efficiently. (github.com)</a></p>
+            <p><b>Project Goal - </b>To create a multithreaded program to simulate collision between millions of circles in an effective timescale.</p>
+            <p><b>Concepts Used - </b>Multithreading, Data-Oriented-Design (DoD), Macros, Optimisation, Linear Algebra</p>
+        </div>
+    </div>
+    <div class="s2">
+        <div class="main-container portfolio-text">
+            <h4>Project Technologies</h4>
+            <p><b>Tools - </b>GitHub / Visual Studio</p>
+            <p><b>Languages - </b>C++</p>
+            <p><b>Libraries - </b>Eigen, TL-Engine, SDL (Subsystems)</p>
+            <p><b>Time Allowed - </b>2 weeks</p>
+        </div>
+    </div>
+    <div class="s3">
+        <div class="main-container portfolio-text">
+            <h4>Discussion</h4>
+            <p>This project is aimed to let me push multithreading and optimisation as far as I can. </p>
+            <p>The program is simulating a scenario in which a number of moving circles are moving and colliding with a number of stationary circles. When a moving circle collides with a stationary circle it bounces off that circle and continues in its new velocity.</p>
+            <p>My current implementation of this simulation uses multithreading and DoD to allow for simulation of circle counts in the millions in a reasonable timeframe. </p>
+            <p>The program will use as many threads as it can, and the workload scales very effectively across multiple cores, making it act as an effective stress test (See Screenshot 3 below). The program can be configured to push even a Ryzen 7 5800X (8 core/16 thread) to 100% utilisation.</p>
+            <p>DoD has been applied to how the data is stored for the circles, with data being split into separate arrays of similar data. For example all of the positions and radiuses for the stationary circles are in one array, same for the moving circles array. This allows the program to be cache efficient as all required data when resolving collisions is next to each other in memory. </p>
+            <p>Configuration of the program is done by changing pre-processor macros and constants in the source code, however this is a limitation to fit the assignment brief. I eventually plan to create a configurator program to make it easier to run on other hardware. However in it's current state changing the configuration requires you to change the source code and recompile the project.</p>
+        </div>
+    </div>
+    <div class="s2">
+        <div class="main-container portfolio-text">
+            <h4>Screenshots</h4>
+            <img alt="Multithreading1" src="/images/personal/multithreading/multithreading.png">
+            <img alt="Multithreading2" src="/images/personal/multithreading/multithreading.gif">
+            <img alt="Multithreading3" src="/images/personal/multithreading/multithreading1.png">
+        </div>
+    </div>
+</body>

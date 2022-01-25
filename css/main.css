@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/* Copyright © Michael Grime 2022 */
+
+/* Colour scheme */
+:root {
+    --swatchDark:#18191a;
+    --swatchDarkShade:#1a1c1da9;
+    --swatchMid:#263238;
+    --swatchLight:#4f5b62;
+    --swatchAccentDark:#38006b;
+    --swatchAccentMid:#6a1b9a;
+    --swatchAccentLight:#9c4dcc;
+    --swatchFooterText:#2c3a42;
+    --swatchAccentLightAlt:#e3c1f8;
+    --desktop-breakpoint:2000px;
+    --mobile-breakpoint:992px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height:100%;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0px 25px 0px;
+    text-decoration: none;
+    transition: 0.1s ease-in-out !important;
+}
+
+@media screen and (max-width: 2000px) {
+    .main-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 0px 25px 0px;
+        text-decoration: none;
+    }
+}
+
+/* Text sizes */
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 28px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Fonts for most text */
+h1,h2,h3,h4,h5,h6,p,a,l,i,strong,span,ul,input,textarea,sub,sup,table {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* text is basically always white */
+p {
+    color: #ffffff;
+}
+
+/* Fonts for code */
+.code p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Header text colour base */
+h1,h2,h3,h4,h5,h6 {
+    color: var(--swatchAccentLight);
+}
+
+/* Global section setup */
+
+
+/* Mid section */
+.s1 {
+    background-color: var(--swatchMid);
+}
+
+/* Light section */
+.s2 {
+    background-color: var(--swatchLight);
+}
+
+.s2 h1,.s2 h2,.s2 h3,.s2 h4,.s2 h5,.s2 h6 {
+    color: var(--swatchAccentLightAlt);
+}
+
+/* Dark Section */
+.s3 {
+    background-color: var(--swatchDark);
+}
+
+/* Special section */
+.s4 {
+    background-color: var(--swatchAccentMid);
+}
+.s4 h1,.s4 h2,.s4 h3,.s4 h4,.s4 h5,.s4 h6 {
+    color: var(--swatchAccentLightAlt);
+}
+
+/* Mobile navbar */
+.mobile-navbar {
+    background-color: var(--swatchDarkShade);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    min-height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.mobile-navbar p {
+    color: var(--swatchAccentLightAlt);
+    margin: 0px;
+    padding-left: 30px;
+    font-size: 45px;
+}
+
+.mobile-navbar #navbarLinks {
+    display: none;
+}
+
+.mobile-navbar a {
+    color: white;
+    padding: 30px 10px 30px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    transition: 0.3s;
+    font-size: 28px;
+}
+
+.mobile-navbar a.icon {
+    background: #3f3f3f00;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 10px 10px 10px;
+    width: 70px;
+    height: 70px;
+    color: var(--swatchAccentLight) !important;
+    font-size: 30px;
+}
+
+.mobile-navbar a:hover {
+    padding-left: 40px;
+}
+
+.scrollable-section {
+    border: none;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Michael Grime | Games & Software Programmer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-utilities@4.1.3/bootstrap-utilities.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/154378ee9f.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <script src='scripts/main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <div id="desktop-navbar" class="desktop-navbar d-none d-lg-block">
+        <p style="font-weight: 500;">Michael Grime</p>
+        <a href="#about-me" class="nav-button-s1">About Me</a>
+        <a href="#portfolio" class="nav-button-s2">Portfolio</a>
+        <a href="#cv" class="nav-button-s3">Curriculum Vitae</a>
+        <a href="#personal-projects"class="nav-button-s2">Personal Projects</a>
+        <a href="#contact"class="nav-button-s1">Contact</a>
+    </div>
+    <!-- Mobile Navigation -->
+    <div id="mobile-navbar" class="mobile-navbar d-lg-none">
+        <p style="font-weight: 500;">Michael Grime</p>
+        <div id="navbarLinks">
+            <a href="#about-me">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#cv">Curriculum Vitae</a>
+            <a href="#personal-projects">Personal Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleHamburgerMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <!-- About Me section - Intro + Skills -->
+    <div class="s1 scrollable-section" id="about-me">
+        <div class="main-container">
+            <h2>Welcome!</h2>
+            <p>I'm Michael, a hardworking and eager programmer, who is always looking for fresh technical challenges. Scroll down to see a selection of the things I've made and projects I've had the privilege to work on!</p>
+            <h3>Skills Breakdown</h3>
+            <table class = "skills-table table-desktop d-none d-lg-block">
+                 <thead>
+                     <tr>
+                         <th>Languages</th>
+                         <th>Engines</th>
+                         <th>Tools</th>
+                         <th>Platforms</th>
+                         <th>Skills</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>C / C++</td>
+                         <td>UE4 / UE5</td>
+                         <td>Git</td>
+                         <td>Windows</td>
+                         <td>Agile / SCRUM</td>
+                     </tr>
+                     <tr>
+                         <td>C#</td>
+                         <td>Unity</td>
+                         <td>Perforce (P4V)</td>
+                         <td>Playstation (4/5)</td>
+                         <td>Client Interaction</td>
+                     </tr>
+                     <tr>
+                         <td>Lua</td>
+                         <td>Godot*</td>
+                         <td>NVIDIA Debug Tools</td>
+                         <td>Xbox XDK/GDK *</td>
+                         <td>Profiling & Optimisation</td>
+                     </tr>
+                     <tr>
+                         <td>Python*</td>
+                         <td>Vulkan</td>
+                         <td>Visual Studio (inc. Code)</td>
+                         <td>Nintendo Switch</td>
+                         <td>Problem Solving</td>
+                     </tr>
+                     <tr>
+                         <td>Rust*</td>
+                         <td>OpenGL</td>
+                         <td>Clickup / Jira</td>
+                         <td>Linux*</td>
+                         <td>Time Management</td>
+                     </tr>
+                     <tr>
+                         <td>HTML / CSS / JS *</td>
+                         <td>DirectX 10/11/12 *</td>
+                         <td>Toggl Track / Plan</td>
+                         <td>OSX*</td>
+                         <td>Self-Starter</td>
+                     </tr>
+                 </tbody>
+            </table>
+            <table class = "skills-table table-mobile d-lg-none">
+                <thead>
+                    <tr>
+                        <th>Languages</th>
+                        <th>Engines</th>
+                        <th>Tools</th>
+                        <th>Platforms</th>
+                        <th>Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C / C++</td>
+                        <td>UE4 / UE5</td>
+                        <td>Git</td>
+                        <td>Windows</td>
+                        <td>Agile / SCRUM</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>Unity</td>
+                        <td>Perforce (P4V)</td>
+                        <td>Playstation (4/5)</td>
+                        <td>Client Interaction</td>
+                    </tr>
+                    <tr>
+                        <td>Lua</td>
+                        <td>Godot*</td>
+                        <td>NVIDIA Debug Tools</td>
+                        <td>Xbox XDK/GDK *</td>
+                        <td>Profiling & Optimisation</td>
+                    </tr>
+                    <tr>
+                        <td>Python*</td>
+                        <td>Vulkan</td>
+                        <td>Visual Studio (inc. Code)</td>
+                        <td>Nintendo Switch</td>
+                        <td>Problem Solving</td>
+                    </tr>
+                    <tr>
+                        <td>Rust*</td>
+                        <td>OpenGL</td>
+                        <td>Clickup / Jira</td>
+                        <td>Linux*</td>
+                        <td>Time Management</td>
+                    </tr>
+                    <tr>
+                        <td>HTML / CSS / JS *</td>
+                        <td>DirectX 10/11/12 *</td>
+                        <td>Toggl Track / Plan</td>
+                        <td>OSX*</td>
+                        <td>Self-Starter</td>
+                    </tr>
+                </tbody>
+           </table>
+            <p style="font-size: small;">* Limited Experience</p>
+        </div>
+    </div>
+    <!-- Portfolio Section - Projects + Work Projects -->
+    <div class="s2 scrollable-section" id="portfolio">
+        <div class="main-container">
+            <h2>Portfolio</h2>
+            <p>Here is a collection of my work. The first section is commercial work, this contains projects I have contributed to as part of my professional career. The second section contains my personal work, these are projects I worked on during University, or during my spare time.</p>
+            <h3>Commercial Work</h3>
+            <p>I no longer work at my previous employer, but when they publically announce the games, I will update this section!</p>
+            <h3>Personal Projects</h3>
+            <!-- Flexbox grid of entries -->
+            <div id="portfolio-entries-personal" class="portfolio-entries">
+                <!-- Example of entry -->
+                <div class="portfolio-entry">
+                    <!-- Background image first -->
+                    <img alt="Velocity" src="images/personal/velocity/velocity.png">
+                    <!-- Text container class -->
+                    <div class="portfolio-entry-text">
+                        <!-- Hyperlink to portfolio page -->
+                        <a href="pages/personal/velocity.html">
+                            <!-- Name of project -->
+                            <p class = "portfolio-entry-name">Velocity Game Engine (Vulkan/C++)</p>
+                            <!-- Year of creation -->
+                            <p class = "portfolio-entry-year">2021</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-entry">
+                    <img src="images/personal/multithreaded.gif"/>
+                    <div class="portfolio-entry-text">
+                        <a href="pages/personal/multithreaded.html">
+                            <p class = "portfolio-entry-name">Multi-Threaded Collision Simulator (C++)</p>
+                            <p class = "portfolio-entry-year">2021</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-entry">
+                    <img src="images/personal/heroesofjoro.png"/>
+                    <div class="portfolio-entry-text">
+                        <a href="pages/personal/heroesofjoro.html">
+                            <p class = "portfolio-entry-name">Heroes Of Joro (Unity/C#)</p>
+                            <p class = "portfolio-entry-year">2021</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-entry">
+                    <img src="images/personal/grapple.png"/>    
+                    <div class="portfolio-entry-text">
+                        <a href="pages/personal/grapple.html">
+                            <p class = "portfolio-entry-name">Grapple (UE4/C++)</p>
+                            <p class = "portfolio-entry-year">2021</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-entry">
+                    <img src="images/personal/gameinaday.jpg"/> 
+                    <div class="portfolio-entry-text">
+                        <a href="pages/personal/gameinaday.html">
+                            <p class = "portfolio-entry-name">Game In A Day (UE4/C++)</p>
+                            <p class = "portfolio-entry-year">2021</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CV Section - Work experience / qualifications etc -->
+    <div class="s3 scrollable-section" id="cv">
+        <div class="main-container">
+            <div class ="cv-section">
+                <h2>Curriculum Vitae</h2>
+                <div class ="cv-entry">
+                    <h4>Huey Games Ltd</h4>
+                    <h6><b>Programmer</b> Aug 2021 - Jan 2022.</h6>
+                    <p> - Worked on currently undisclosed projects using Unity and Unreal Engine 4 </p>
+                    <p> - Heavy focus on optimisation of CPU + GPU for console platforms </p>
+                    <p> - Contributed to internal code tools </p>
+                    <p> - Liased with project clients </p>
+                </div>
+                <hr>
+                <div class ="cv-entry">
+                    <h4>The University of Central Lancashire</h4>
+                    <h6><b>Computer Games Development MComp (Hons)</b> Sep 2017 - Jul 2021</h6>
+                    <p> - Completed 4 years study in C++/C#/Software Engineering and Computer Graphics</p>
+                    <p> - Graduated with a 1st Class Degree</p>
+                    <p> - Averaged 87% across all years</p>
+                </div>
+                <hr>
+                <div class ="cv-entry">
+                    <h4>Cardinal Newman College</h4>
+                    <h6><b>A and AS Levels</b> Sep 2015 - Jul 2017</h6>
+                    <p> - Completed 3 A-Levels and 1 AS-Level </p>
+                    <p> - A-Level Computing : A</p> 
+                    <p> - A-Level Mathematics : A</p> 
+                    <p> - A-Level Accounting : B</p> 
+                    <p> - AS-Level Music Tech : A</p> 
+                </div>
+                <hr>
+                <div class ="cv-entry">
+                    <h4><b>St Cecilia's RC High School</b> Sep 2011 - Jun 2015</h4>
+                    <h6><b>A and AS Levels</b> Sep 2015 - Jul 2017</h6>
+                    <p> - Completed 11 GCSE's A*-B including English Language, English Literature and Mathematics </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Current Projects - Current activies out of work. might change name  -->
+    <div class="s2 scrollable-section" id="current-projects">
+        <div class="main-container">
+            <h2>Current Projects</h2>
+            <p>Here are some of the things I'm working on right now!</p>
+            <h3>Tetra</h3>
+            <p>Tetra is a spirtual successor to my Velocity Game Engine from my master's project. It follows a very similar style, but with the intent to develop much further. Here are some planned features:</p>
+            <p>- Cross-Platform support with multiple backends (DX11/DX12/OGL/Vulkan/Metal)</p>
+            <p>- Custom ECS built for performance and a heavily scoped feature set</p>
+            <p>- Support for bypassing the editor and writing fast game code in C++ using the core engine</p>
+            <p>- Lua Scripting support </p>
+        </div>
+    </div>
+    <!-- Contact - setup form thing -->
+    <div class="s1 scrollable-section" id="contact">
+        <div class="main-container">
+            <h2>Contact</h2>
+            <p>I can be contacted at : contact@michaelgrime.co.uk</p>
+            <p>Get in touch about any opportunities or just to network! I would love to have a conversation.</p>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Nav Bar -->
+    <script src="scripts/highlightAnchorScroll.js"></script>
+
+</body>
+</html>
